@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h2>User Registration</h2>
+
+
+
+    <form method="POST" action="register.php">
+        Full Name:<br>
+        <input type="text" name="fullname" required><br><br>
+
+        National ID Number:<br>
+        <input type="text" name="national_id_number" required><br><br>
+
+        Email:<br>
+        <input type="email" name="email" required><br><br>
+
+        Phone Number:<br>
+        <input type="text" name="phone" required><br><br>
+
+        Driving License Number:<br>
+        <input type="text" name="driving_license_number" required><br><br>
+
+        Gender:<br>
+        <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        Preferred Car Type:<br>
+        <input type="text" name="preferred_car_type" required><br><br>
+
+        Password:<br>
+        <input type="password" name="password" required><br><br>
+
+        <input type="submit" name="register" value="Register">
+    </form>
+
+    <p>Already have an account? <a href="login.php">Login</a></p>
+</body>
+</html>
