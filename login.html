@@ -18,7 +18,7 @@
 
 <div class="container">
 
-<form action="./login.html" method="POST">
+<form action="./index.html" method="GET" onsubmit="event.preventDefault(); document.getElementById('login-message').textContent = 'Login is demo-only on GitHub Pages. Your credentials were not submitted.'; return false;">
 
 <label>Email Address</label>
 <input type="email" name="email" required>
@@ -31,6 +31,8 @@
 <br><br>
 
 <button type="submit" name="login">Login</button>
+
+<p id="login-message" class="form-message"></p>
 
 <p>
     New customer?

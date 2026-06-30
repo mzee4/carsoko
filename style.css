@@ -84,6 +84,13 @@ button:hover{
     background-color: #0097a7;
 }
 
+.form-message{
+    margin-top: 12px;
+    text-align: center;
+    color: #b45309;
+    font-weight: bold;
+}
+
 footer{
     background-color: #222;
     color: white;

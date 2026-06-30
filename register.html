@@ -16,7 +16,7 @@
     </nav>
 
     <div class="container">
-        <form method="POST" action="./register.html">
+        <form method="GET" action="./index.html" onsubmit="event.preventDefault(); document.getElementById('register-message').textContent = 'Registration is demo-only on GitHub Pages. Your details were not submitted.'; return false;">
             <label>Full Name</label>
             <input type="text" name="fullname" required>
 
@@ -53,6 +53,8 @@
 
             <button type="submit" name="register">Register</button>
         </form>
+
+        <p id="register-message" class="form-message"></p>
 
         <p style="text-align: center; margin-top: 15px;">
             Already have an account? <a href="./login.html">Login</a>
